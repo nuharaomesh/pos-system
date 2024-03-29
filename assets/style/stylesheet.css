@@ -1,2 +1,25 @@
-.customNav {
+section:first-of-type {
+    width: calc(100vw - 40px);
+    height: 1000px;
+    margin-top: 75px;
+    margin-left: 20px;
+    background-color: #0001;
+}
+
+.custom-card {
+    width: 600px;
+    aspect-ratio: 3/1;
+}
+
+#custom-div {
+    background-color: #223E90;
+    color: white;
+}
+
+#custom-searchBar {
+    width: 100px;
+}
+
+#custom-body {
+    margin-top: 35px;
 }
