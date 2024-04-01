@@ -148,3 +148,75 @@ section:nth-last-of-type(1) {
         border-radius: 10px;
     }
 }
+
+@media all and (max-width: 768px){
+    footer {
+        position: static;
+        width: 100vw;
+        height: 300px;
+
+        background-color: rgba(17, 21, 32, 1);
+    }
+
+    footer>hr {
+        color: white;
+        position: relative;
+        top: 250px;
+    }
+
+    .footer-label {
+        position: relative;
+        top: 250px;
+        text-align: center;
+        color: rgba(180, 180, 180, 1);
+    }
+
+    /*Section 1 style*/
+    section:first-of-type {
+        width: calc(100vw - 80px);
+        height: fit-content;
+        /*background-color: rgba(226, 226, 226, 1);*/
+        background-color: blue;
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+    /*Section 2 style*/
+    section:nth-last-of-type(1) {
+        width: calc(100vw - 80px);
+        height: fit-content;
+        background-color: rgba(226, 226, 226, 1);
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+
+    .hTag-style {
+        margin-left: 20px;
+        color: rgba(3, 31, 114, 1);
+    }
+
+    .custom-form {
+        margin: 0 20px;
+    }
+
+    .custom-card {
+        margin-right: 0;
+    }
+
+    .customer-add-btn-pos {
+        position: relative;
+        left: 1000px;
+    }
+
+    .tbl-pos {
+        box-sizing: border-box;
+        padding: 0 20px;
+        background-color: rgba(242, 242, 242, 1);
+        border-radius: 10px;
+    }
+}
