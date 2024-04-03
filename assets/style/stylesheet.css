@@ -2,7 +2,7 @@
 footer {
     position: static;
     width: 100vw;
-    height: 300px;
+    height: 200px;
 
     background-color: rgba(17, 21, 32, 1);
 }
@@ -10,12 +10,12 @@ footer {
 footer>hr {
     color: white;
     position: relative;
-    top: 250px;
+    top: 140px;
 }
 
 .footer-label {
     position: relative;
-    top: 250px;
+    top: 144px;
     text-align: center;
     color: rgba(180, 180, 180, 1);
 }
@@ -32,6 +32,16 @@ section:first-of-type {
 }
 
 /*Section 2 style*/
+section:nth-last-of-type(2) {
+    width: calc(100vw - 80px);
+    height: fit-content;
+    background-color: rgba(226, 226, 226, 1);
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
 section:nth-last-of-type(1) {
     width: calc(100vw - 80px);
     height: fit-content;
@@ -64,11 +74,6 @@ section:nth-last-of-type(1) {
     margin-right: calc(100vw - 374px);
 }
 
-.customer-add-btn-pos {
-    position: relative;
-    left: 1000px;
-}
-
 .tbl-pos {
     box-sizing: border-box;
     padding: 0 20px;
@@ -76,7 +81,30 @@ section:nth-last-of-type(1) {
     border-radius: 10px;
 }
 
-@media all and (max-width: 1024px) {
+/*place order section style*/
+.custom-pos {
+    width: 585px;
+    margin-left: 20px;
+}
+
+.custom-invoice-card {
+    display: flex;
+}
+
+.add-margin {
+    margin-right: 20px;
+}
+
+.custom-display {
+    display: flex;
+    margin-right: 20px;
+}
+
+.custom-btn-pos {
+    margin-top: 54px;
+}
+
+@media all and (max-width: 1440px) {
 
     footer {
         position: static;
