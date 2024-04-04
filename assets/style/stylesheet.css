@@ -104,12 +104,18 @@ section:nth-last-of-type(1) {
     margin-top: 54px;
 }
 
+/*Modal style*/
+.header-color {
+    background-color: rgba(3, 31, 114, 1);
+    color: white;
+}
+
 @media all and (max-width: 1440px) {
 
     footer {
         position: static;
         width: 100vw;
-        height: 300px;
+        height: 200px;
 
         background-color: rgba(17, 21, 32, 1);
     }
@@ -117,12 +123,12 @@ section:nth-last-of-type(1) {
     footer>hr {
         color: white;
         position: relative;
-        top: 250px;
+        top: 140px;
     }
 
     .footer-label {
         position: relative;
-        top: 250px;
+        top: 144px;
         text-align: center;
         color: rgba(180, 180, 180, 1);
     }
@@ -131,8 +137,7 @@ section:nth-last-of-type(1) {
     section:first-of-type {
         width: calc(100vw - 80px);
         height: fit-content;
-        /*background-color: rgba(226, 226, 226, 1);*/
-        background-color: red;
+        background-color: rgba(226, 226, 226, 1);
         margin-top: 100px;
         margin-left: 40px;
         margin-right: auto;
@@ -181,7 +186,7 @@ section:nth-last-of-type(1) {
     footer {
         position: static;
         width: 100vw;
-        height: 300px;
+        height: 200px;
 
         background-color: rgba(17, 21, 32, 1);
     }
@@ -189,12 +194,12 @@ section:nth-last-of-type(1) {
     footer>hr {
         color: white;
         position: relative;
-        top: 250px;
+        top: 140px;
     }
 
     .footer-label {
         position: relative;
-        top: 250px;
+        top: 144px;
         text-align: center;
         color: rgba(180, 180, 180, 1);
     }
@@ -203,8 +208,7 @@ section:nth-last-of-type(1) {
     section:first-of-type {
         width: calc(100vw - 80px);
         height: fit-content;
-        /*background-color: rgba(226, 226, 226, 1);*/
-        background-color: blue;
+        background-color: rgba(226, 226, 226, 1);
         margin-top: 100px;
         margin-left: 40px;
         margin-right: auto;
@@ -246,5 +250,116 @@ section:nth-last-of-type(1) {
         padding: 0 20px;
         background-color: rgba(242, 242, 242, 1);
         border-radius: 10px;
+    }
+
+    .custom-pos {
+        width: 645px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .custom-display {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@media all and (max-width: 425px){
+    footer {
+        position: static;
+        width: 100vw;
+        height: 200px;
+
+        background-color: rgba(17, 21, 32, 1);
+    }
+
+    footer>hr {
+        color: white;
+        position: relative;
+        top: 140px;
+    }
+
+    .footer-label {
+        position: relative;
+        top: 144px;
+        text-align: center;
+        color: rgba(180, 180, 180, 1);
+
+        font-size: small;
+    }
+
+    /*Section 1 style*/
+    section:first-of-type {
+        width: calc(100vw - 20px);
+        height: fit-content;
+        background-color: rgba(226, 226, 226, 1);
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+    /*Section 2 style*/
+    section:nth-last-of-type(2) {
+        width: calc(100vw - 20px);
+        height: fit-content;
+        background-color: rgba(226, 226, 226, 1);
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+    /*Section 2 style*/
+    section:nth-last-of-type(1) {
+        width: calc(100vw - 20px);
+        height: fit-content;
+        background-color: rgba(226, 226, 226, 1);
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+
+    .hTag-style {
+        margin-left: 10px;
+        font-size: large;
+        color: rgba(3, 31, 114, 1);
+    }
+
+    .custom-form {
+        margin: 0 5px;
+    }
+
+    .custom-card {
+        margin-right: 0;
+    }
+
+    .customer-add-btn-pos {
+        position: relative;
+        left: 1000px;
+    }
+
+    .tbl-pos {
+        box-sizing: border-box;
+        padding: 0 10px;
+        background-color: rgba(242, 242, 242, 1);
+        border-radius: 10px;
+    }
+
+    .custom-pos {
+        width: 645px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .custom-display {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .btn-distance {
+        margin-right: calc(100vw - 294px);
     }
 }
