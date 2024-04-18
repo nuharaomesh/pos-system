@@ -1,7 +1,116 @@
-.forgetPassword-btn {
-    color: rgba(58,76,123,0.51);
+root {
+
+}
+
+body {
+    overflow: hidden;
 }
 
 .custom-invoice-card {
+    width: 450px;
+}
 
+#rectangle1 {
+    height: 508px;
+    aspect-ratio: 1/1;
+
+    border-radius: 50px;
+
+    background-image: linear-gradient(to right, #00D1FF 0%, #001AFF 100%);
+
+    rotate: 146deg;
+    margin-top: 340px;
+    margin-left: -230px;
+}
+
+#rectangle2 {
+    height: 498px;
+    aspect-ratio: 1/1;
+
+    border-radius: 50px;
+
+    background-image: linear-gradient(to top, #00D1FF 0%, #001AFF 100%);
+
+    rotate: 134deg;
+    margin-top: -990px;
+    margin-left: 1640px;
+}
+
+#credential-section {
+    width: 1408px;
+    height: 750px;
+
+    margin-left: 255px;
+    margin-top: -245px;
+
+    rotate: 360deg;
+
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.form {
+    width: 704px;
+    height: 750px;
+    background-color: rgba(216,211,209,0.29);
+
+    padding-left: 130px;
+    padding-top: 280px;
+}
+
+#custom-sign-in-btn {
+    margin-top: -500px;
+    margin-left: 470px;
+    color: darkblue;
+    font-size: medium;
+}
+
+.form-right {
+    width: calc(1408px - 704px);
+    height: 750px;
+    background-color: rgba(2, 20, 74, 1);
+}
+
+.form-right> div> img {
+    width: 400px;
+}
+
+.img-position {
+    margin-left: 170px;
+    margin-top: 100px;
+}
+
+#custom-login-btn {
+    width: 450px;
+    font-weight: bolder;
+    background-image: linear-gradient(to left, #00D1FF 0%, #001AFF 100%);
+    border: 0;
+    margin-top: 50px;
+}
+
+#custom-frgPw-btn {
+    margin-top: -30px;
+    margin-left: 320px;
+
+    color: blue;
+    font-size: small;
+}
+
+#login-desc> h3 {
+    font-size: xxx-large;
+}
+
+#login-desc {
+    margin-top: -170px;
+    padding-bottom: 90px;
+    color: rgba(0, 26, 103, 1);
+    font-weight: bolder;
+}
+
+#login-desc2 {
+    color: white;
+    font-weight: bolder;
+    margin-left: 230px;
+    margin-top: 100px;
 }

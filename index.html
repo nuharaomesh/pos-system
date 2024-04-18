@@ -11,22 +11,39 @@
 </head>
 <body>
     <section>
-        <div><button>Sign in</button></div>
-        <form>
-            <div class="custom-invoice-card">
-                <div class="mb-3 add-margin">
-                    <label for="email" class="form-label">Enter your email</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Enter your password</label>
-                    <input type="password" class="form-control" id="password">
-                </div>
-                <div><button class="forgetPassword-btn">Forget passworc ?</button></div>
-                <button>Login</button>
-            </div>
-        </form>
+        <div id="rectangle1"></div>
+        <div id="rectangle2"></div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <section id="credential-section">
+        <div class="form">
+            <div><button id="custom-sign-in-btn" class="btn btn" type="submit">Sign in</button></div>
+            <div id="login-desc">
+                <h3>Log in</h3>
+                <p>login to your account with email & password</p>
+            </div>
+            <form>
+                <div class="custom-invoice-card">
+                    <div class="mb-3 add-margin">
+                        <label for="email" class="form-label">Username or email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your username or email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <div><button class="btn btn" id="custom-frgPw-btn" type="submit">Forget password</button></div>
+                    <button id="custom-login-btn" class="btn btn-primary" type="submit">Log in</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-right">
+            <div id="login-desc2">
+                <h3>Hello Again!</h3>
+                <p>Welcome back, you've been missed!</p>
+            </div>
+            <div class="img-position"><img src="assets/image/login%20page%20prp.png" alt="" title=""></div>
+        </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
