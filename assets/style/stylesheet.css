@@ -7,6 +7,10 @@ footer {
     background-color: rgba(17, 21, 32, 1);
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 footer>hr {
     color: white;
     position: relative;
