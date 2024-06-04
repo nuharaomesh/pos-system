@@ -1,6 +1,11 @@
 /*Footer style*/
+.custom-tr:hover {
+    cursor: pointer;
+}
+
 footer {
-    position: static;
+    position: relative;
+    bottom: 0;
     width: 100vw;
     height: 200px;
 

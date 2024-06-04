@@ -9,6 +9,7 @@
 
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
             <!-- Navbar content -->
@@ -47,6 +48,7 @@
         <br>
         <h3 class="hTag-style">Customer</h3>
         <br>
+
         <div class="custom-form">
             <div class="custom-card">
                 <form class="d-flex" role="search">
@@ -65,108 +67,28 @@
                     <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#addCustomerModal">Add</button>
                 </div>
                 <br>
+
                 <div>
                     <table class="table">
                         <thead>
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Customer Name</th>
-                            <th scope="col">Age</th>
-                            <th scope="col">Address</th>
-                            <th scope="col">Salary</th>
-                        </tr>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">first Name</th>
+                                <th scope="col">last Name</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Salary</th>
+                            </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>21</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
+                        <tbody id="customer-table-bdy">
+
                         </tbody>
                     </table>
                 </div>
                 <br>
             </div>
         </div>
+
         <!-- Customer add Modal -->
         <div class="modal fade" id="addCustomerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -205,7 +127,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-primary" id="customer-save">Save</button>
                     </div>
                 </div>
             </div>
@@ -254,13 +176,14 @@
 
     <!-- Item section -->
     <section id="item-section">
+
         <br>
         <h3 class="hTag-style">Item</h3>
         <br>
         <div class="custom-form">
             <div class="custom-card">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Input customer name or NIC" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Input item name or code" aria-label="Search">
                     <button class="btn btn-primary" type="submit">Search</button>
                 </form>
             </div>
@@ -270,9 +193,9 @@
                 <div class="new-btn-pos">
                     <div class="btn-distance">
                         <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateItemModel">Update</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateItemModel" id="update-item-btn">Update</button>
                     </div>
-                    <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#addItemModal">Add</button>
+                    <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#addItemModal" id="item-add-btn">Add</button>
                 </div>
                 <br>
                 <div>
@@ -285,90 +208,20 @@
                             <th scope="col">Quantity</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>21</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>21</td>
-                            <td>@fat</td>
-                        </tr>
+                        <tbody id="item-table-body">
+
                         </tbody>
                     </table>
                 </div>
                 <br>
             </div>
         </div>
+
         <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header header-color">
-                        <h1 class="modal-title fs-5">Add a new Customer</h1>
+                        <h1 class="modal-title fs-5">Add new item</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -393,16 +246,17 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-primary" id="save_item">Save</button>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="modal fade" id="updateItemModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header header-color">
-                        <h1 class="modal-title fs-5">Add a new Item</h1>
+                        <h1 class="modal-title fs-5">Update the Item</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -427,7 +281,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Update</button>
+                        <button type="button" class="btn btn-success" id="update-item">Update</button>
                     </div>
                 </div>
             </div>
@@ -546,6 +400,7 @@
             </div>
         </div>
         <br>
+
         <div class="custom-form">
             <table class="table">
                 <thead>
@@ -565,96 +420,21 @@
                     <td>@mdo</td>
                     <td>@mdo</td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>21</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
                 </tbody>
             </table>
         </div>
         <br>
     </section>
 
-    <footer>
+    <!--<footer>
         <hr>
         <div class="footer-label">&copy; 2024 All Rights reserved by Uresha pvt</div>
-    </footer>
+    </footer>-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="assets/lib/jquery.js"></script>
-<script src="main.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="module" src="controller/CustomerController.js"></script>
+<script type="module" src="controller/ItemController.js"></script>
 </body>
 </html>
