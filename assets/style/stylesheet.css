@@ -372,3 +372,8 @@ section:nth-last-of-type(1) {
         margin-right: calc(100vw - 294px);
     }
 }
+
+#error-message {
+    color: red;
+    display: none;
+}
