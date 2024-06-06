@@ -225,10 +225,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="itemAddForm">
                             <div class="mb-3">
                                 <label for="code" class="form-label">Code</label>
-                                <input type="text" class="form-control" id="code">
+                                <input type="text" class="form-control" id="code" required>
+                                <span id="error-message">This field is required.</span>
                             </div>
                             <div class="mb-3">
                                 <label for="item-name" class="form-label">Item name</label>
@@ -242,11 +243,12 @@
                                 <label for="item-quantity" class="form-label">Quantity</label>
                                 <input type="text" class="form-control" id="item-quantity">
                             </div>
+                            <button type="submit" class="btn btn-primary" id="save_item">Save</button>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="save_item">Save</button>
+
                     </div>
                 </div>
             </div>
